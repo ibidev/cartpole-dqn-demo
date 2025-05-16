@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 
 # Load the trained DQN model
-model = load_model("dqn_cartpole.h5")
+model = load_model("dqn_cartpole.h5", compile=False)
 
 # Define a prediction function
 def predict_action(pos, vel, angle, ang_vel):
